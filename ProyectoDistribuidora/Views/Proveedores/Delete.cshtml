@@ -1,0 +1,77 @@
+﻿@model ProyectoDistribuidora.Models.Proveedores
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h6>Estás seguro que quieres eliminar al proveedor?</h6>
+<br />
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="card-title">Eliminar Proveedor</p>
+            </div>
+            <div class="card-body">
+
+                <dl class="row">
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.CedulaProveedor)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.CedulaProveedor)
+                    </dd>
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.NombreComercial)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.NombreComercial)
+                    </dd>
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.Telefono)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.Telefono)
+                    </dd>
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.Direccion)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.Direccion)
+                    </dd>
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.Contacto)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.Contacto)
+                    </dd>
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.FechaIngreso)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.FechaIngreso)
+                    </dd>
+                    <dt class="col-sm-5">
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+                    <dd class="col-sm-7">
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+                </dl>
+
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="IdProveedor" />
+                    <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+                    <a asp-action="ListaProveedores">Volver a la lista</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+
+
+</div>

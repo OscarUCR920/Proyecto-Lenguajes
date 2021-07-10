@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ProyectoDistribuidora.Models.Productos>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>Lista Productos</h5>
+
+<div class="table-responsive" id="box_lista">
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PrecioCompra)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ImpuestoValor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Exento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PrecioTotalProducto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UnidadMedida)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fecha)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdProveedor)
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td> @Html.DisplayFor(modelItem => item.Tipo) </td>
+                <td> @Html.DisplayFor(modelItem => item.Descripcion) </td>
+                <td> @Html.DisplayFor(modelItem => item.PrecioCompra)  </td>
+                <td> @Html.DisplayFor(modelItem => item.ImpuestoValor) </td>
+                <td> @Html.DisplayFor(modelItem => item.Exento)</td>
+                <td> @Html.DisplayFor(modelItem => item.PrecioTotalProducto)</td>
+                <td> @Html.DisplayFor(modelItem => item.UnidadMedida) </td>
+                <td> @Html.DisplayFor(modelItem => item.Estado) </td>
+                <td> @Html.DisplayFor(modelItem => item.Fecha) </td>
+                <td> @Html.DisplayFor(modelItem => item.IdProveedor)</td>
+                <td>
+                    <a class="btn btn-dark" asp-action="Details" asp-route-id="@item.CodigoBarra">Detalles</a>
+                </td>
+                <td>
+                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.CodigoBarra">Editar</a>
+                </td>
+                <td>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.CodigoBarra">Eliminar</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

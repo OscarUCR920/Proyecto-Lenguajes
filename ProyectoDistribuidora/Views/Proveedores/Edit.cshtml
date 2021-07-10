@@ -1,0 +1,77 @@
+﻿@model ProyectoDistribuidora.Models.Proveedores
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h5>Editar Proveedores</h5>
+<hr />
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Formulario para editar usuarios</p>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="IdProveedor" />
+                        <div class="form-group">
+                            <label asp-for="CedulaProveedor" class="control-label"></label>
+                            <input asp-for="CedulaProveedor" class="form-control" />
+                            <span asp-validation-for="CedulaProveedor" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="NombreComercial" class="control-label"></label>
+                            <input asp-for="NombreComercial" class="form-control" />
+                            <span asp-validation-for="NombreComercial" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Telefono" class="control-label"></label>
+                            <input asp-for="Telefono" class="form-control" />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Direccion" class="control-label"></label>
+                            <input asp-for="Direccion" class="form-control" />
+                            <span asp-validation-for="Direccion" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Contacto" class="control-label"></label>
+                            <input asp-for="Contacto" class="form-control" />
+                            <span asp-validation-for="Contacto" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FechaIngreso" class="control-label"></label>
+                            <input asp-for="FechaIngreso" class="form-control" />
+                            <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Guardar" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <a asp-action="ListaProveedores" style="font-size:15px">Volver a la Lista</a>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+<hr />
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

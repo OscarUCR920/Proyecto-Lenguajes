@@ -1,0 +1,86 @@
+﻿@model ProyectoDistribuidora.Models.Usuarios
+
+@{
+    ViewData["Title"] = "CrearCuenta";
+}
+
+
+<h4>Llenar Formulario</h4>
+<hr />  
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+
+            <div class="card">
+                <div class="card-header">
+                    <p class="card-title">Formulario para crear cuenta</p>
+                </div>
+                <div class="card-body">
+
+                    @if ( @TempData["mensaje"] != null)
+                    {
+                    <div class="alert alert-success">
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>
+                            @TempData["mensaje"]
+                        </strong>
+                        
+                    </div>
+                    }
+                    
+                <form asp-action="CrearCuenta" enctype="multipart/form-data" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Cedula" class="control-label"></label>
+                        <input asp-for="Cedula" class="form-control" />
+                        <span asp-validation-for="Cedula" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TipoCedula" class="control-label">Tipo de Cédula</label>
+                        <input asp-for="TipoCedula" class="form-control" />
+                        <span asp-validation-for="TipoCedula" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NombreCompleto" class="control-label">Nombre Completo</label>
+                        <input asp-for="NombreCompleto" class="form-control" />
+                        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Direccion" class="control-label"></label>
+                        <input asp-for="Direccion" class="form-control" />
+                        <span asp-validation-for="Direccion" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("1"))
+                    {
+                    <div class="form-group">
+                        <label asp-for="IdRol" class="control-label"></label>
+                        <input asp-for="IdRol" class="form-control" />
+                        <span asp-validation-for="IdRol" class="text-danger"></span>
+                    </div>
+                    }
+                    <div class="form-group">
+                        <p class="text-center text-info">La contraseña se envia al correo registrado</p>
+                        <br />
+                        <input type="submit" value="Registrarse" class="btn btn-primary" style="width:90px"/>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+<hr />
