@@ -56,9 +56,6 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " asp-area="" asp-controller="" asp-action="">Ventas</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link " asp-area="" asp-controller="" asp-action="">Bitácora</a>
                             </li>
                             <li class="nav-item dropdown ml-auto">
@@ -76,36 +73,44 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="" asp-action="">Carrito</a>
                             </li>
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <li class="nav-item dropdown ml-auto">
-                                    @*Sumbmenu opciones para Sesion de Inicio Ya el usuario está autentificado*@
-                                    <a class="nav-link dropdown-toggle  ml-auto" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">@User.Identity.Name</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item nav-link text-black-50 " asp-controller="Login" asp-action=""> Cambiar Contraseña</a>
 
-                                        <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Logout</a>
-
-                                        <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Cerrar secion</a>
-
-                                    </div>
+                         @if (User.Identity.IsAuthenticated && User.IsInRole("2"))
+                         {
+                                @*Lista Ventas, solo el gerente puede ver esta opción*@
+                                <li class="nav-item">
+                                    <a class="nav-link " asp-area="" asp-controller="" asp-action="">Lista Ventas</a>
                                 </li>
-                            }
-                            else
-                            {
-                                @*Sumbmenu opciones para Sesion de Inicio y no está autentificado todavía*@
-                                <li class="nav-item dropdown ml-auto">
-                                    <a class="nav-link dropdown-toggle  ml-auto" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Tú Cuenta</a>
+                         }
+                         @if (User.Identity.IsAuthenticated)
+                         {
+                                    <li class="nav-item dropdown ml-auto">
+                                        @*Sumbmenu opciones para Sesion de Inicio Ya el usuario está autentificado*@
+                                        <a class="nav-link dropdown-toggle  ml-auto" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">@User.Identity.Name</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item nav-link text-black-50 " asp-controller="Login" asp-action=""> Cambiar Contraseña</a>
 
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item nav-link text-black-50 " asp-controller="Login" asp-action="Index">Iniciar Sesión</a>
-                                        <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="CrearCuenta">Registrarse</a>
-                                    </div>
-                                </li>
-                            }
+                                            <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Logout</a>
 
-                        }
-                    </ul>
+                                            <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Cerrar secion</a>
+
+                                        </div>
+                                    </li>
+                                }
+                                else
+                                {
+                                    @*Sumbmenu opciones para Sesion de Inicio y no está autentificado todavía*@
+                                    <li class="nav-item dropdown ml-auto">
+                                        <a class="nav-link dropdown-toggle  ml-auto" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Tú Cuenta</a>
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item nav-link text-black-50 " asp-controller="Login" asp-action="Index">Iniciar Sesión</a>
+                                            <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="CrearCuenta">Registrarse</a>
+                                        </div>
+                                    </li>
+                                }
+
+                            }
+                        </ul>
                 </div> 
             </div>
         </nav>
