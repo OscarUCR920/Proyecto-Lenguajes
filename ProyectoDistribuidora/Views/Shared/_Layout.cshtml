@@ -76,14 +76,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-controller="" asp-action="">Carrito</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Proveedores</a>
-                                @*Sumbmenu opciones para agregar o ver lista de Usuarios*@
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item nav-link " asp-controller="Proveedores" asp-action="CrearProveedor">Crear Proveedor</a>
-                                    <a class="dropdown-item nav-link" asp-controller="Proveedores" asp-action="ListaProveedores">Lista Proveedores</a>
-                                </div>
-                            </li>
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <li class="nav-item dropdown ml-auto">
