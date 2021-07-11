@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj": {}
+    "C:\\Users\\50687\\Desktop\\Proyecto\\Nueva carpeta\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj": {
+    "C:\\Users\\50687\\Desktop\\Proyecto\\Nueva carpeta\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+        "projectUniqueName": "C:\\Users\\50687\\Desktop\\Proyecto\\Nueva carpeta\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
         "projectName": "ProyectoDistribuidora",
-        "projectPath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
-        "packagesPath": "C:\\Users\\valeF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\obj\\",
+        "projectPath": "C:\\Users\\50687\\Desktop\\Proyecto\\Nueva carpeta\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+        "packagesPath": "C:\\Users\\50687\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\50687\\Desktop\\Proyecto\\Nueva carpeta\\Proyecto-Lenguajes\\ProyectoDistribuidora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valeF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\50687\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
