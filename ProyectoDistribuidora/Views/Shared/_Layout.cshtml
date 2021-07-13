@@ -69,32 +69,47 @@
                         }
                         else
                         {
-                            @*Carrito*@
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="" asp-action="">Carrito</a>
-                            </li>
 
-                         @if (User.Identity.IsAuthenticated && User.IsInRole("2"))
-                         {
+                            @if (User.Identity.IsAuthenticated && User.IsInRole("2"))
+                            {
                                 @*Lista Ventas, solo el gerente puede ver esta opción*@
                                 <li class="nav-item">
                                     <a class="nav-link " asp-area="" asp-controller="" asp-action="">Lista Ventas</a>
                                 </li>
-                         }
-                         @if (User.Identity.IsAuthenticated)
-                         {
+
+                                @*Carrito*@
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="" asp-action="">Carrito</a>
+                                </li>
+                                <li class="nav-item dropdown ml-auto">
+                                    @*Sumbmenu opciones para Sesion de Inicio Ya el usuario está autentificado*@
+                                    <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">@User.Identity.Name</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item nav-link  " asp-controller="Login" asp-action=""> Cambiar Contraseña</a>
+                                        <a class="dropdown-item nav-link " asp-controller="Login" asp-action="Logout">Cerrar Sesión</a>
+                                    </div>
+                                </li>
+                            }
+                            else
+                            {
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    @*Carrito*@
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="" asp-action="">Carrito</a>
+                                    </li>
                                     <li class="nav-item dropdown ml-auto">
                                         @*Sumbmenu opciones para Sesion de Inicio Ya el usuario está autentificado*@
                                         <a class="nav-link dropdown-toggle  ml-auto" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">@User.Identity.Name</a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item nav-link text-black-50 " asp-controller="Login" asp-action=""> Cambiar Contraseña</a>
 
-                                            <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Logout</a>
-
-                                            <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Cerrar secion</a>
+                                            <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="Logout">Cerrar Sesión</a>
 
                                         </div>
                                     </li>
+
                                 }
                                 else
                                 {
@@ -107,10 +122,11 @@
                                             <a class="dropdown-item nav-link text-black-50" asp-controller="Login" asp-action="CrearCuenta">Registrarse</a>
                                         </div>
                                     </li>
-                                }
+                                }@*Fin del if para Cliente*@
+                            }@*Fin del if para Gerente*@
 
-                            }
-                        </ul>
+                        }@*Fin del if para Administrador*@
+                    </ul>
                 </div> 
             </div>
         </nav>
