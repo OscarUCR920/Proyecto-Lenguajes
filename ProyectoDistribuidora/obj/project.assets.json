@@ -9234,11 +9234,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\User\\Desktop\\proyecto lenguajes\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
       "projectName": "ProyectoDistribuidora",
       "projectPath": "C:\\Users\\User\\Desktop\\proyecto lenguajes\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\User\\Desktop\\proyecto lenguajes\\Proyecto-Lenguajes\\ProyectoDistribuidora\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+      "projectName": "ProyectoDistribuidora",
+      "projectPath": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+      "packagesPath": "C:\\Users\\valeF\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\obj\\",
+>>>>>>> 4292ca251bc64c7aa9f4ea0d1b33deb65670710c
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
