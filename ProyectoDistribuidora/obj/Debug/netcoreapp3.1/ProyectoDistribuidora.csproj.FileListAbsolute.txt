@@ -334,3 +334,4 @@ C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidor
 C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.dll
 C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.pdb
 C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.genruntimeconfig.cache
+C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\Razor\Views\Productos\Create.cshtml.g.cs

@@ -9227,20 +9227,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\valeF\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\proyecto lenguajes\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
       "projectName": "ProyectoDistribuidora",
-      "projectPath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
-      "packagesPath": "C:\\Users\\valeF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\proyecto lenguajes\\Proyecto-Lenguajes\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\proyecto lenguajes\\Proyecto-Lenguajes\\ProyectoDistribuidora\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\valeF\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9310,7 +9318,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
