@@ -61,6 +61,7 @@ namespace ProyectoDistribuidora.Controllers
                     var userClaims = new List<Claim>()
                     {
                         new Claim(ClaimTypes.Name,temp.Email),
+                        new Claim(ClaimTypes.Name,temp.Email),
                         new Claim(ClaimTypes.Email, temp.Email),
                         new Claim(ClaimTypes.Role,temp.IdRol.ToString()),
                     };

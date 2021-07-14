@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "njWE2gPqOSzwOsWry56WR1Zhq/3+yn+kzw0q47UjL1V0woxNSth+MKah9WmKnpzSEKZEPwloCA27Oy9/bg+kDg==",
+  "dgSpecHash": "hTPCpWnfv5Uscfb+khvkZrkw3KO/UqtWV61XQOKEHFGIgaq60/rQEX6cAOLEpNlr6VojXyE62jBcel7BgbHy1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+  "projectFilePath": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\valeF\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\valeF\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

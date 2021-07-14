@@ -9232,11 +9232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+      "projectUniqueName": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
       "projectName": "ProyectoDistribuidora",
-      "projectPath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
+      "projectPath": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\ProyectoDistribuidora.csproj",
       "packagesPath": "C:\\Users\\valeF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valeF\\source\\repos\\ProyectoDistribuidora\\ProyectoDistribuidora\\obj\\",
+      "outputPath": "C:\\Users\\valeF\\Desktop\\Poyecto Versiones\\ProyectoDistribuidora\\ProyectoDistribuidora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valeF\\AppData\\Roaming\\NuGet\\NuGet.Config",
