@@ -121,7 +121,7 @@ namespace ProyectoDistribuidora.Controllers
             return View(productos);
         }
 
-        // GET: Productos/Delete/5
+        // GET: Productos/Delete/
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
