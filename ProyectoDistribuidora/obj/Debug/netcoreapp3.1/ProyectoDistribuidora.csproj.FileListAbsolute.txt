@@ -334,6 +334,9 @@ C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidor
 C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.dll
 C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.pdb
 C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.genruntimeconfig.cache
+<<<<<<< HEAD
+C:\Users\User\Desktop\proyecto lenguajes\Proyecto-Lenguajes\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\Razor\Views\Productos\Create.cshtml.g.cs
+=======
 C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribuidora\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribuidora\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribuidora\bin\Debug\netcoreapp3.1\ProyectoDistribuidora.exe
@@ -502,3 +505,4 @@ C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribui
 C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.dll
 C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.pdb
 C:\Users\valeF\Desktop\Poyecto Versiones\ProyectoDistribuidora\ProyectoDistribuidora\obj\Debug\netcoreapp3.1\ProyectoDistribuidora.genruntimeconfig.cache
+>>>>>>> 4292ca251bc64c7aa9f4ea0d1b33deb65670710c

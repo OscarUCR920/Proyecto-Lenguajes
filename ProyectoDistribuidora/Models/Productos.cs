@@ -45,7 +45,8 @@ namespace ProyectoDistribuidora.Models
         [Display(Name = "Estado")]
         public string Estado { get; set; }
 
-        [Required(ErrorMessage = "No se permite campos vacíos")]
+        //comento la siguiente linea de código, si se deja no permite agregar las fotos
+        //[Required(ErrorMessage = "No se permite campos vacíos")]
         [Display(Name = "Foto")]
         public string Foto { get; set; }
 
